@@ -7,6 +7,6 @@ class HuntingGrounds implements State {
 
     @Override
     public void doing() {
-        System.out.println("Hunting...");
+        System.out.println("I'm hunting now!");
     }
 }

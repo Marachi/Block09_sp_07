@@ -7,6 +7,6 @@ class MushroomGlade implements State {
 
     @Override
     public void doing() {
-        System.out.println("Gathering...");
+        System.out.println("I'm gathering mushrooms now!");
     }
 }

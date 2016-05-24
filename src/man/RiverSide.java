@@ -7,6 +7,6 @@ class RiverSide implements State {
 
     @Override
     public void doing() {
-        System.out.println("I'm ");
+        System.out.println("I'm fishing now!");
     }
 }
