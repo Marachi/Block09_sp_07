@@ -31,6 +31,7 @@ public class Main {
         man.setState(river);
         man.doing();
         hunting.seeABeast();
+        man.doing();
 
     }
 }
