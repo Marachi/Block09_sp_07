@@ -8,11 +8,9 @@ import java.util.List;
  */
 public class Hunting implements Observed {
 
-    private State state;
     private String hunterMsg;
 
     Hunting(String hunterMsg) {
-        this.state = new HuntingGrounds();
         this.hunterMsg = hunterMsg;
     }
 
