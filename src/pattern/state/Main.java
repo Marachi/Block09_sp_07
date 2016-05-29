@@ -1,4 +1,4 @@
-package pattern;
+package pattern.state;
 
 /**
  * Created by Славик on 22.05.2016.

@@ -1,31 +1,37 @@
 package man;
 
 /**
- * Created by Славик on 22.05.2016.
+ * Created by Potaychuk Sviatoslav on 24.05.2016.
  */
 public class Main {
     public static void main(String[] args) {
+
+
         //Create a man
         Human man = new Human();
-         /*Create 3 states:
+
+         /*Create 2 states
           - mushroom glade
           - riverside
-          - hunting grounds*/
+          */
         State mushroomGlade = new MushroomGlade();
         State river = new RiverSide();
-        State huntingGrounds = new HuntingGrounds();
+
+        //Create an observer
+        Hunting hunting = new Hunting("I'm hunting now!...");
+        hunting.addObsrver(man);
+
 
         //action in riverside state
         man.setState(mushroomGlade);
+       // hunting.seeABeast();
         man.doing();
 
         //action in mushroom glade state
         man.setState(river);
         man.doing();
+        hunting.seeABeast();
 
-        //action in hunting grounds state
-        man.setState(huntingGrounds);
-        man.doing();
     }
 }
 

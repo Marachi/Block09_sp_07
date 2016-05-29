@@ -1,7 +1,7 @@
 package man;
 
 /**
- * Created by potaychuk on 24.05.2016.
+ * Created by Potaychuk Sviatoslav on 24.05.2016.
  */
 class MushroomGlade implements State {
 
